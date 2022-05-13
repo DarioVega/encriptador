@@ -76,41 +76,43 @@ const limpiaTextoEncriptado = () => {
 };
 
 //desencripta texto
-const desencriptaTexto = (texto) => {
-  limpiaTextoEncriptado();
+// const desencriptaTexto = (texto) => {
+//   limpiaTextoEncriptado();
 
-  let diccionario = {
-    ai: "a",
-    enter: "e",
-    imes: "i",
-    ober: "o",
-    ufat: "u",
-  };
+//   let diccionario = {
+//     ai: "a",
+//     enter: "e",
+//     imes: "i",
+//     ober: "o",
+//     ufat: "u",
+//   };
 
-  let palabra = "";
+//   let palabra = "";
 
-  for (let letra of texto) {
-    if (diccionario.hasOwnProperty(letra)) {
-      switch (letra) {
-        case "ai":
-          letra = diccionario.ai;
-          break;
-        case "enter":
-          letra = diccionario.enter;
-          break;
-        case "imes":
-          letra = diccionario.imes;
-          break;
-        case "ober":
-          letra = diccionario.ober;
-          break;
-        case "ufat":
-          letra = diccionario.ufat;
-          break;
-      }
-    }
-    palabra += letra;
-  }
+//   for (let letra of texto) {
+//     if (diccionario.hasOwnProperty(letra)) {
+//       switch (letra) {
+//         case "ai":
+//           letra = diccionario.ai;
+//           break;
+//         case "enter":
+//           letra = diccionario.enter;
+//           break;
+//         case "imes":
+//           letra = diccionario.imes;
+//           break;
+//         case "ober":
+//           letra = diccionario.ober;
+//           break;
+//         case "ufat":
+//           letra = diccionario.ufat;
+//           break;
+//       }
+//     }
+//     palabra += letra;
+//   }
 
-  return palabra;
-};
+//   return palabra;
+// };
+
+//CAMBIOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
