@@ -12,13 +12,13 @@ const asignaTexto = (texto) => {
 //encripta texto
 const encriptaTexto = (texto) => {
   let diccionario = [
-    ["a","ai"],
-    ["e","enter"],
-    ["i","imes"],
-    ["o","ober"],
-    ["u","ufat"]
-  ]
-  
+    ["a", "ai"],
+    ["e", "enter"],
+    ["i", "imes"],
+    ["o", "ober"],
+    ["u", "ufat"],
+  ];
+
   let palabra = "";
 
   for (let letra of texto) {
@@ -26,20 +26,21 @@ const encriptaTexto = (texto) => {
       let i = 0;
       switch (letra) {
         case "a":
-          letra = diccionario[i,1];
+          // letra = diccionario[(0, 1)];
+          alert(diccionario[(0, 0)]);
           break;
-        case "e":
-          letra = diccionario[i+1,1];
-          break;
-        case "i":
-          letra = diccionario.[i+2,1];
-          break;
-        case "o":
-          letra = diccionario[i+3,1];
-          break;
-        case "u":
-          letra = diccionario[i+4,1];
-          break;
+        // case "e":
+        //   letra = diccionario[i+1,1];
+        //   break;
+        // case "i":
+        //   letra = diccionario.[i+2,1];
+        //   break;
+        // case "o":
+        //   letra = diccionario[i+3,1];
+        //   break;
+        // case "u":
+        //   letra = diccionario[i+4,1];
+        //   break;
       }
     }
     palabra += letra;
