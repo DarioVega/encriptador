@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <img
+        src="img/Logo.png"
+        alt="logo"
+        class="logo"
+        width="100px"
+        height="50px"
+      />
+      <div class="container">
+        <!--texto que ingresa el usuario-->
+        <textarea
+          class="txt-texto"
+          id="txt-texto"
+          placeholder="Ingrese el texto aquí"
+        ></textarea>
+        <div class="advertencia">
+          <img
+            src="img/exclamacion.png"
+            alt="exclamacion"
+            width="2%"
+            height="2%"
+          />
+          <p class="p-advertencia">Solo letras minúsculas y sin acento</p>
+        </div>
+        <input
+          type="button"
+          class="btn"
+          value="Encriptar!"
+          id="btn-encriptar"
+        />
+        <input
+          type="button"
+          class="btn"
+          value="Desencriptar!"
+          id="btn-desencriptar"
+        />
+      </div>
+      <div class="muestraTexto">
+        <!-- acá se muestra el texto encriptado -->
+        <textarea class="p-texto" id="p-texto"></textarea>
+
+        <div class="img-desaparece" id="img-desaparece">
+          <img
+            height="200px"
+            src="img/Muñeco.png"
+            alt="muñeco"
+            class="munieco"
+            id="munieco"
+          />
+          <p class="texto1" id="texto1">Ningún mensaje fue encontrado</p>
+          <p class="texto2" id="texto2">
+            Ingresa el texto que deseas encriptar o desencriptar
+          </p>
+        </div>
+        <input
+          type="button"
+          class="btn copiar"
+          id="btn-copiar"
+          value="Copiar"
+        />
+      </div>
+    </main>
+    <footer class="footer">Diseñado por Sergio Darío Vega</footer>
+    <script src="js/index.js"></script>
+    <script src="js/procesa-texto.js"></script>
+  </body>
+</html>
