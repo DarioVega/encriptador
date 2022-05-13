@@ -37,5 +37,3 @@ btnDesencriptar.addEventListener("click", () => {
 
   limpiaTexto();
 });
-
-alert("prueba");

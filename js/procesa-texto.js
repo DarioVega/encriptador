@@ -11,33 +11,34 @@ const asignaTexto = (texto) => {
 
 //encripta texto
 const encriptaTexto = (texto) => {
-  let diccionario = {
-    a: "ai",
-    e: "enter",
-    i: "imes",
-    o: "ober",
-    u: "ufat",
-  };
-
+  let diccionario = [
+    ["a","ai"],
+    ["e","enter"],
+    ["i","imes"],
+    ["o","ober"],
+    ["u","ufat"]
+  ]
+  
   let palabra = "";
 
   for (let letra of texto) {
-    if (diccionario.hasOwnProperty(letra)) {
+    if (diccionario.includes(letra)) {
+      let i = 0;
       switch (letra) {
         case "a":
-          letra = diccionario.a;
+          letra = diccionario[i,1];
           break;
         case "e":
-          letra = diccionario.e;
+          letra = diccionario[i+1,1];
           break;
         case "i":
-          letra = diccionario.i;
+          letra = diccionario.[i+2,1];
           break;
         case "o":
-          letra = diccionario.o;
+          letra = diccionario[i+3,1];
           break;
         case "u":
-          letra = diccionario.u;
+          letra = diccionario[i+4,1];
           break;
       }
     }
@@ -74,45 +75,3 @@ const copiaTextoEncriptado = () => {
 const limpiaTextoEncriptado = () => {
   return (document.querySelector("#p-texto").value = "");
 };
-
-//desencripta texto
-// const desencriptaTexto = (texto) => {
-//   limpiaTextoEncriptado();
-
-//   let diccionario = {
-//     ai: "a",
-//     enter: "e",
-//     imes: "i",
-//     ober: "o",
-//     ufat: "u",
-//   };
-
-//   let palabra = "";
-
-//   for (let letra of texto) {
-//     if (diccionario.hasOwnProperty(letra)) {
-//       switch (letra) {
-//         case "ai":
-//           letra = diccionario.ai;
-//           break;
-//         case "enter":
-//           letra = diccionario.enter;
-//           break;
-//         case "imes":
-//           letra = diccionario.imes;
-//           break;
-//         case "ober":
-//           letra = diccionario.ober;
-//           break;
-//         case "ufat":
-//           letra = diccionario.ufat;
-//           break;
-//       }
-//     }
-//     palabra += letra;
-//   }
-
-//   return palabra;
-// };
-
-//CAMBIOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
