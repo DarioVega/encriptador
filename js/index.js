@@ -26,14 +26,16 @@ btnCopiar.addEventListener("click", () => {
   copiaTextoEncriptado();
 });
 
-btnDesencriptar.addEventListener("click", () => {
-  let texto = capturaTexto();
+// btnDesencriptar.addEventListener("click", () => {
+//   let texto = capturaTexto();
 
-  let textoDesencriptado = desencriptaTexto(texto);
+//   let textoDesencriptado = desencriptaTexto(texto);
 
-  ocultaImagenes();
+//   ocultaImagenes();
 
-  asignaTexto(textoDesencriptado);
+//   asignaTexto(textoDesencriptado);
 
-  limpiaTexto();
-});
+//   limpiaTexto();
+// });
+
+alert("master");
