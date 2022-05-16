@@ -21,21 +21,19 @@ btnEncriptar.addEventListener("click", () => {
   limpiaTexto();
 });
 
+btnDesencriptar.addEventListener("click", () => {
+  let texto = capturaTexto();
+
+  let textoDesencriptado = desencriptaTexto(texto);
+
+  ocultaImagenes();
+
+  asignaTexto(textoDesencriptado);
+
+  limpiaTexto();
+});
+
 //agrego un evento click al botón copiar
 btnCopiar.addEventListener("click", () => {
   copiaTextoEncriptado();
 });
-
-// btnDesencriptar.addEventListener("click", () => {
-//   let texto = capturaTexto();
-
-//   let textoDesencriptado = desencriptaTexto(texto);
-
-//   ocultaImagenes();
-
-//   asignaTexto(textoDesencriptado);
-
-//   limpiaTexto();
-// });
-
-alert("master");
